@@ -28,10 +28,43 @@ main {
 section {
   font-size: 1em;
   background: #888;
-  width: 22%;
-  margin: 1em 1% 1em 1%;
-  display: inline-block;
+   margin: 1em 1% 1em 1%;
+  
 }
 section:hover {
-  background: #666;
+  background: purple;
 }
+/* FIRST BREAKPOINT (MEDIUM SIZE) */
+@media screen and (min-width: 500px) {  
+ body{
+	 background: #11af8d;
+	 font-family: verdana;
+ }
+ section {
+  display: inline-block;
+  width: 45%;
+  
+ }
+ section:hover {
+  background: yellow;
+}
+}
+/* END FIRST BREAKPOINT */
+
+
+/* SECOND BREAKPOINT (DESKTOP SIZE) */
+@media screen and (min-width: 1000px) {
+  body{
+	 background: #f00;
+	 color: pink;
+ }
+ section {
+  
+  width: 22%;
+  
+ }
+ section:hover {
+  background: lightgreen;
+}
+}
+/*
